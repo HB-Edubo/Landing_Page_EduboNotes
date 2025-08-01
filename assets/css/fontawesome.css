@@ -4617,3 +4617,38 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+    /* Iluminar la imagen al pasar el ratón sobre la tarjeta */
+  .card:hover .card-img-top {
+    box-shadow: 0 0 12px 4px rgba(40, 167, 69, 0.7);
+    transition: box-shadow .3s;
+  }
+
+  /* Botón con estilo services-icon-wap */
+  .services-icon-wap {
+    background-color: #fff;
+    border-radius: .5rem;
+    transition: background-color .3s, color .3s;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 4rem 1rem;      /* padding vertical aumentado para mayor altura */
+    min-height: 350px;       /* altura mínima generosa */
+    cursor: pointer;
+    font-family: inherit;
+  }
+  /* Aseguramos que todo el texto dentro cambie de color */
+  .services-icon-wap h2,
+  .services-icon-wap p,
+  .services-icon-wap a {
+    transition: color .3s;
+    color: #000;   /* negro por defecto */
+  }
+  .services-icon-wap:hover {
+    background-color: #28a745; /* verde de fondo */
+  }
+  .services-icon-wap:hover h2,
+  .services-icon-wap:hover p,
+  .services-icon-wap:hover a {
+    color: #fff !important;    /* texto blanco intenso en hover */
+  }
