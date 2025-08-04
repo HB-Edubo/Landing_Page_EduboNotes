@@ -27,7 +27,55 @@ https://templatemo.com/tm-559-zay-shop
 
 -->
 </head>
+<style>
+    /* Botón de descarga Excel: color base y hover en #cc0605 */
+    .btn-outline-success.download-btn {
+      border-color: #cc0605;
+      color: #cc0605;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .btn-outline-success.download-btn:hover,
+    .btn-outline-success.download-btn:focus {
+      background-color: #cc0605 !important;
+      border-color: #cc0605 !important;
+      color: #fff !important;
+    }
 
+    /* Servicios icon hover: default transition */
+    .services-icon-wap {
+      transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s;
+      border: 1px solid transparent;
+    }
+    /* Asegurar que los enlaces dentro hereden color */
+    .services-icon-wap a {
+      color: inherit;
+      transition: color 0.3s;
+    }
+
+    /* Efecto al hover sobre el botón */
+    .services-icon-wap:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-5px);
+      background-color: #cc0605;
+      border-color: #cc0605;
+      color: #fff;
+    }
+
+    /* Efecto al hover sobre la tarjeta completa (incluye imagen): iluminar botón */
+    .card:hover .services-icon-wap {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-5px);
+      background-color: #cc0605;
+      border-color: #cc0605;
+      color: #fff;
+    }
+
+    /* Transición suave para la tarjeta */
+    .card {
+      overflow: visible;
+      transition: transform 0.3s;
+    }
+  </style>
 <body>
     <!-- Start Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
@@ -184,7 +232,9 @@ https://templatemo.com/tm-559-zay-shop
   <div class="row mt-4 text-center">
     <div class="col">
       <p class="text-muted fst-italic mb-3">Puedes descargar un archivo Excel de ejemplo desde la interfaz del programa.</p>
-     <a href="./download/notas.xlsx" download class="btn btn-outline-success btn-lg shadow-sm"> <i class="fas fa-file-excel me-2"></i>Descargar plantilla Excel</a>
+      <a href="./download/notas.xlsx" download class="btn btn-outline-success btn-lg shadow download-btn">
+        <i class="fas fa-file-excel me-2"></i>Descargar plantilla Excel
+      </a>
     </div>
   </div>
 </section>

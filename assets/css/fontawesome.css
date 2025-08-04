@@ -4642,7 +4642,7 @@ readers do not read off random characters that represent icons */
   .services-icon-wap p,
   .services-icon-wap a {
     transition: color .3s;
-    color: #000;   /* negro por defecto */
+    color: #cc0605;   /* negro por defecto */
   }
   .services-icon-wap:hover {
     background-color: #28a745; /* verde de fondo */
@@ -4652,3 +4652,4 @@ readers do not read off random characters that represent icons */
   .services-icon-wap:hover a {
     color: #fff !important;    /* texto blanco intenso en hover */
   }
+
