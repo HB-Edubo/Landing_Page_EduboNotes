@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Edubo Notes</title>
+    <title>Edubo Notes - Inicio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/edubo_icon_16x16.ico">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
 <!--
     
-TemplateMo 559 Zay Shop
+TemplateMo 559 Edubo Notes
 
 https://templatemo.com/tm-559-zay-shop
 
@@ -35,7 +35,7 @@ https://templatemo.com/tm-559-zay-shop
     transition: box-shadow .3s;
   }
   .card:hover .services-icon-wap {
-    background-color: #cc0605';  /* verde */
+    background-color: #cc0605;  
   }
   .card:hover .services-icon-wap h2,
   .card:hover .services-icon-wap p,
@@ -113,6 +113,72 @@ https://templatemo.com/tm-559-zay-shop
       overflow: visible;
       transition: transform 0.3s;
     }
+
+    /* ===== Hero Carousel refinado ===== */
+.hero-carousel {
+  background: #f1f1f1;                 /* fondo suave del área del slider */
+  border: none;
+}
+
+.hero-carousel .carousel-item {
+  /* evita “saltos” visuales entre slides */
+  padding: 2rem 0;
+}
+
+/* Controles (flechas) minimalistas */
+.hero-carousel .carousel-control-prev,
+.hero-carousel .carousel-control-next {
+  width: 48px;                          /* reducir área clicable visible */
+  opacity: .55;                         /* más sutil */
+  transition: opacity .2s ease;
+}
+.hero-carousel .carousel-control-prev:hover,
+.hero-carousel .carousel-control-next:hover {
+  opacity: .9;
+}
+
+/* Iconos de flecha más visibles pero limpios */
+.hero-carousel .carousel-control-prev-icon,
+.hero-carousel .carousel-control-next-icon {
+  filter: invert(1) grayscale(100%);    /* flechas oscuras o claras según fondo */
+  width: 28px;
+  height: 28px;
+}
+
+/* Quita cualquier “franja” o fondo de los controles */
+.hero-carousel .carousel-control-prev,
+.hero-carousel .carousel-control-next {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0;
+}
+
+/* Indicadores discretos y centrados */
+.hero-carousel .carousel-indicators {
+  bottom: 10px;                         /* un poco más arriba */
+  margin: 0;
+}
+.hero-carousel .carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.25);
+  border: 0;
+  margin: 0 5px;
+  transition: transform .15s ease, background-color .15s ease;
+}
+.hero-carousel .carousel-indicators .active {
+  background-color: #cc0605;            /* tu color de marca */
+  transform: scale(1.2);
+}
+
+/* Tipografías dentro del hero: un pelín más compactas en pantallas medianas */
+@media (max-width: 991.98px) {
+  .hero-carousel h1.display-5 { font-size: 2.2rem; }
+  .hero-carousel .h2 { font-size: 1.4rem; }
+  .hero-carousel .lead { font-size: 1.05rem; }
+}
+
 </style>
 
 
@@ -123,15 +189,14 @@ https://templatemo.com/tm-559-zay-shop
             <div class="w-100 d-flex justify-content-between">
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:adm@edubo.org">adm@edubo.org</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:+59176440094">+591 76440094</a>
                 </div>
                 <div>
-                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                    <a class="text-light" href="https://www.facebook.com/Edubo.org/?locale=es_LA" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/edubo.academy/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/company/eduboorg/?originalSubdomain=bo" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
                 </div>
             </div>
         </div>
@@ -139,11 +204,12 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Close Top Nav -->
 
 
+
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+            <a class="navbar-brand text-success logo h1 align-self-center" href="Inicio.html">
                <img src="./assets/img/edubo.png" alt="Logo Notes" style="height: 40px;">
             </a>
 
@@ -155,14 +221,14 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link" href="Inicio.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">Guias</a>
+                            <a class="nav-link" href="guias.html">Guias</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Información</a>
+                            <a class="nav-link" href="info.html">Información</a>
                         </li>
                     </ul>
                 </div>
@@ -185,7 +251,7 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Close Header -->
 
     <!-- Modal -->
-    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade bg-white" id="templatemo_search" tabInicio="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="w-100 pt-1 mb-5 text-right">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -203,95 +269,84 @@ https://templatemo.com/tm-559-zay-shop
 
 
 
-    <!-- Start Banner Hero -->
-    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-           <div class="carousel-item active">
-            <div class="container">
-                <div class="row justify-content-center align-items-center text-center py-5" style="min-height: 400px;">
-                <div class="col-lg-10">
+ <!-- Start Banner Hero -->
+<div id="template-mo-zay-hero-carousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
 
-                    <h1 class="display-5 fw-bold text-success mb-3">
-                    <i class="fas fa-clipboard-list me-2"></i>Simplifica la gestión de calificaciones y asistencia
-                    </h1>
-
-                    <h2 class="h4 text-muted mb-4">con <span class="fw-semibold">Edubo Notes</span></h2>
-
-                    <p class="lead mb-4 text-dark">
-                    Automatiza el llenado de formularios académicos desde un archivo Excel en pocos pasos.
-                    </p>
-
-                    <div class="d-flex justify-content-center gap-3 flex-wrap">
-                    <a href="./downloads/EduboNotes_Setup.exe" download class="btn btn-success btn-lg shadow-sm">
-                        <i class="fas fa-download me-2"></i>Descargar Edubo Notes
-                    </a>
-
-                      <a href="./download/notas.xlsx" download class="btn btn-outline-success btn-lg shadow download-btn">
-                        <i class="fas fa-file-excel me-2"></i>Descargar plantilla Excel
-                    </a>
-                    </div>
-
-                </div>
-                </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row justify-content-center align-items-center text-center py-5" style="min-height: 400px;">
+          <div class="col-lg-10">
+            <h1 class="display-5 fw-bold text-success mb-3">
+              <i class="fas fa-clipboard-list me-2"></i>Simplifica la gestión de calificaciones y asistencia
+            </h1>
+            <h2 class="h4 text-muted mb-4">con <span class="fw-semibold">Edubo Notes</span></h2>
+            <p class="lead mb-4 text-dark">Automatiza el llenado de formularios académicos desde un archivo Excel en pocos pasos.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <a href="./downloads/EduboNotes_Setup.exe" download class="btn btn-success btn-lg shadow-sm">
+                <i class="fas fa-download me-2"></i>Descargar Edubo Notes
+              </a>
+              <a href="./download/notas.xlsx" download class="btn btn-outline-success btn-lg shadow download-btn">
+                <i class="fas fa-file-excel me-2"></i>Descargar plantilla Excel
+              </a>
             </div>
-         </div>
-           <div class="carousel-item">
-                <div class="container">
-                    <div class="row align-items-center p-5">
-                        <!-- Imagen -->
-                        <div class="col-lg-6 text-center order-lg-last mb-4 mb-lg-0">
-                            <img class="img-fluid" src="./assets/img/excel (3).png" alt="" style="max-height: 300px;">
-                        </div>
-                        <!-- Texto -->
-                        <div class="col-lg-6">
-                            <div class="text-start">
-                                <h1 class="h1 text-success">Carga tu Excel y automatiza formularios educativos</h1>
-                                <h3 class="h2">Olvídate del ingreso manual de datos</h3>
-                                <p>
-                                    Notes convierte tu archivo en acciones automáticas, llenando formularios web con precisión y en segundos.
-                                    Ideal para evitar errores y acelerar tu trabajo docente.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row align-items-center p-5">
-                        <!-- Imagen -->
-                        <div class="col-lg-6 text-center order-lg-last mb-4 mb-lg-0">
-                            <img class="img-fluid" src="./assets/img/laptop.png" alt="" style="max-height: 300px;">
-                        </div>
-                        <!-- Texto -->
-                        <div class="col-lg-6">
-                            <div class="text-start">
-                                <h1 class="h1 text-success">Funciona en cualquier sistema educativo</h1>
-                                <h3 class="h2">Sin importar el diseño del sitio web</h3>
-                                <p>
-                                    Notes se adapta automáticamente a cualquier plataforma educativa, simulando el ingreso humano
-                                    para llenar campos de calificaciones y asistencia sin esfuerzo.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
-            <i class="fas fa-chevron-left"></i>
-        </a>
-        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
-            <i class="fas fa-chevron-right"></i>
-        </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- End Banner Hero -->
+
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row align-items-center p-5">
+          <div class="col-lg-6 text-center order-lg-last mb-4 mb-lg-0">
+            <img class="img-fluid" src="./assets/img/excel (3).png" alt="" style="max-height: 300px;">
+          </div>
+          <div class="col-lg-6">
+            <div class="text-start">
+              <h1 class="h1 text-success">Carga tu Excel y automatiza formularios educativos</h1>
+              <h3 class="h2">Olvídate del ingreso manual de datos</h3>
+              <p>Notes convierte tu archivo en acciones automáticas, llenando formularios web con precisión y en segundos. Ideal para evitar errores y acelerar tu trabajo docente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row align-items-center p-5">
+          <div class="col-lg-6 text-center order-lg-last mb-4 mb-lg-0">
+            <img class="img-fluid" src="./assets/img/laptop.png" alt="" style="max-height: 300px;">
+          </div>
+          <div class="col-lg-6">
+            <div class="text-start">
+              <h1 class="h1 text-success">Funciona en cualquier sistema educativo</h1>
+              <h3 class="h2">Sin importar el diseño del sitio web</h3>
+              <p>Notes se adapta automáticamente a cualquier plataforma educativa, simulando el ingreso humano para llenar campos de calificaciones y asistencia sin esfuerzo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+<!-- End Banner Hero -->
+
+
 
 
     <!-- Start Categories of The Month -->
@@ -300,49 +355,44 @@ https://templatemo.com/tm-559-zay-shop
     <div class="col-lg-6 m-auto">
       <h1 class="h1">Funciones en Acción</h1>
       <p>
-        Descubre las principales características de nuestra app de notas: captura ideas, organiza tu contenido y mantén todo sincronizado.
+        Descubre las principales características de nuestra app de notas: organiza tu contenido y mantén todo sincronizado.
       </p>
     </div>
   </div>
 
-  <!-- INICIO CARRUSEL -->
   <div class="owl-carousel categories-carousel">
     <!-- Item 1 -->
     <div class="item text-center p-3">
-      <img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border" alt="Captura rápida">
-      <h5 class="mt-3 mb-2">Captura rápida</h5>
-      <p>Captura ideas al instante</p>
+      <img src="./assets/img/menu.png" class=" img-fluid border" alt="Captura rápida">
+      <h5 class="mt-3 mb-2">Herramienta facil e intuitiva</h5>
+      <p>Llena notas al instante</p>
+    </div>
+
+    <div class="item text-center p-3">
+      <img src="./assets/img/codigo.png" class=" img-fluid border" alt="Colaboración">
+      <h5 class="mt-3 mb-2">Pide tu llave de acceso</h5>
+      <p>Obten 3 usos gratuitos</p>
     </div>
     <!-- Item 2 -->
     <div class="item text-center p-3">
-      <img src="./assets/img/category_img_02.jpg" class="rounded-circle img-fluid border" alt="Organización">
-      <h5 class="mt-3 mb-2">Organización</h5>
-      <p>Clasifica notas con etiquetas</p>
+      <img src="./assets/img/soporte.png" class=" img-fluid border" alt="Organización">
+      <h5 class="mt-3 mb-2">Soporte Tecnico</h5>
+      <p>Estamos aqui para ayudarte</p>
     </div>
     <!-- Item 3 -->
     <div class="item text-center p-3">
-      <img src="./assets/img/category_img_03.jpg" class="rounded-circle img-fluid border" alt="Sincronización">
-      <h5 class="mt-3 mb-2">Sincronización</h5>
-      <p>Accede desde cualquier dispositivo</p>
+      <img src="./assets/img/notas1.png" class=" img-fluid border" alt="Sincronización">
+      <h5 class="mt-3 mb-2">Llena los formularios al instante</h5>
+      <p>Evita errores y ahorra tiempo</p>
     </div>
     <!-- Item 4 -->
     <div class="item text-center p-3">
-      <img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border" alt="Recordatorios">
-      <h5 class="mt-3 mb-2">Recordatorios</h5>
-      <p>No olvides nada importante</p>
+      <img src="./assets/img/notas2.png" class=" img-fluid border" alt="Recordatorios">
+      <h5 class="mt-3 mb-2">LLena la plantilla de Excel</h5>
+      <p>Usa nuestra plantilla para más eficiencia</p>
     </div>
     <!-- Item 5 -->
-    <div class="item text-center p-3">
-      <img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border" alt="Colaboración">
-      <h5 class="mt-3 mb-2">Colaboración</h5>
-      <p>Comparte y edita en equipo</p>
-    </div>
     <!-- Item 6 -->
-    <div class="item text-center p-3">
-      <img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border" alt="Seguridad">
-      <h5 class="mt-3 mb-2">Seguridad</h5>
-      <p>Protege tus notas con contraseña</p>
-    </div>
   </div>
   <!-- FIN CARRUSEL -->
 </section>
@@ -425,22 +475,16 @@ https://templatemo.com/tm-559-zay-shop
                 <ul class="list-unstyled text-light footer-link-list mt-3">
                     <li>
                         <i class="fa fa-phone fa-fw"></i>
-                        <a class="text-decoration-none text-light" href="tel:010-020-0340">010-020-0340</a>
+                        <a class="text-decoration-none text-light" href="tel:+591 76440094">+591 76440094</a>
                     </li>
                     <li>
                         <i class="fa fa-envelope fa-fw"></i>
-                        <a class="text-decoration-none text-light" href="mailto:info@company.com">info@company.com</a>
+                        <a class="text-decoration-none text-light" href="mailto:adm@edubo.org">adm@edubo.org</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="col-md-4 pt-5">
-                <h2 class="h2 text-light border-bottom pb-3 border-light">Información</h2>
-                <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none text-light" href="#">Inicio</a></li>
-                    <li><a class="text-decoration-none text-light" href="#">Contacto</a></li>
-                </ul>
-            </div>
+            
 
         </div>
 
@@ -450,23 +494,18 @@ https://templatemo.com/tm-559-zay-shop
             </div>
             <div class="col-12">
                 <ul class="list-inline footer-icons d-flex justify-content-center gap-2">
-                    <li class="list-inline-item border border-light rounded-circle text-center">
-                        <a rel="nofollow" class="text-light text-decoration-none" target="_blank" href="http://fb.com/templatemo">
+                    <li class="list-inline-item border border-light  text-center">
+                        <a rel="nofollow" class="text-light text-decoration-none" target="_blank" href="https://www.facebook.com/Edubo.org/?locale=es_LA">
                             <i class="fab fa-facebook-f fa-lg fa-fw"></i>
                         </a>
                     </li>
-                    <li class="list-inline-item border border-light rounded-circle text-center">
-                        <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/">
+                    <li class="list-inline-item border border-light  text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/edubo.academy/">
                             <i class="fab fa-instagram fa-lg fa-fw"></i>
                         </a>
                     </li>
-                    <li class="list-inline-item border border-light rounded-circle text-center">
-                        <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/">
-                            <i class="fab fa-twitter fa-lg fa-fw"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item border border-light rounded-circle text-center">
-                        <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/">
+                    <li class="list-inline-item border border-light  text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/company/eduboorg/?originalSubdomain=bo">
                             <i class="fab fa-linkedin fa-lg fa-fw"></i>
                         </a>
                     </li>
@@ -480,8 +519,8 @@ https://templatemo.com/tm-559-zay-shop
             <div class="row pt-2">
                 <div class="col-12 text-center">
                     <p class="text-light mb-0">
-                        Copyright &copy; 2025 Tu Empresa
-                        | Diseñado por <a rel="sponsored" href="https://templatemo.com/page/1" target="_blank" class="text-light text-decoration-underline">TemplateMo</a>
+                        Copyright &copy;edubo
+                        
                     </p>
                 </div>
             </div>
@@ -491,35 +530,35 @@ https://templatemo.com/tm-559-zay-shop
 <!-- End Footer -->
 
     <!-- Start Script -->
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <!-- End Script -->
 
-<!-- Owl Carousel JS -->
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    ></script>
-    <script>
-    $(document).ready(function(){
-        $('.categories-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: false,
-        slideBy: 1,
-        responsive: {
-            0:   { items: 1 },
-            576: { items: 2 },
-            768: { items: 3 }
-        }
-        });
+<!-- Owl Carousel JS -->  
+<script>
+  $(function(){
+    $('.categories-carousel').owlCarousel({
+      loop: true,
+      margin: 30,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: false,
+      slideBy: 1,
+      nav: true,               // <--- esto activa flechas
+      dots: false,             // opcional
+      navText: ['‹','›'],      // opcional, personaliza flechas
+      responsive: {
+        0:   { items: 1 },
+        576: { items: 2 },
+        768: { items: 3 }
+      }
     });
-    </script>
+  });
+</script>
     <!-- End Script -->
 </body>
 

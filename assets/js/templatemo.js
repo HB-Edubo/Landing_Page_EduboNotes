@@ -1,6 +1,6 @@
 /*
 
-TemplateMo 559 Zay Shop
+TemplateMo 559 Edubo Notes
 
 https://templatemo.com/tm-559-zay-shop
 
